@@ -1,3 +1,25 @@
 body {
     background-color: khaki;
 }
+
+h1 {
+    color: red;
+    text-align: center;
+    font-weight: 800;
+    font-style:normal;
+    text-decoration: underline;
+    font-size: 30px;
+}
+.chapter {
+    color: red;
+    text-align: center;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 20px;
+} 
+.text {
+    font-weight: 900;
+}
+.toUpperCase {
+    text-transform: uppercase;
+}
