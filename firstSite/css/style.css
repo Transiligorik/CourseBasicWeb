@@ -60,3 +60,25 @@ h2.title {
     color: #FFFFFF;
     margin-top: 21px;
 }
+
+.promo_text {
+    Font-family: 'Roboto Light';
+    Font-style: Mixed;
+    Font-size: 21px;
+    Line-height: 28px;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0 25px;
+    margin-top: 23px;
+}
+
+.promo_text span {
+    Font-family: Roboto;
+    Font-style: Bold;
+    Font-size: 21px;
+    Line-height: 28px;
+    Line-height: 114%;
+    color: #F9BF3B;
+    font-weight: 700;
+}
