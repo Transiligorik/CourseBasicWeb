@@ -125,3 +125,63 @@ h2.title {
     display: block;
     margin: 0 auto;
 }
+
+/*main block*/
+
+.waiting {
+    height: 607px;
+    background: #EFEFEF;
+    padding: 85px 0 75px 0;
+}
+
+.waitnig_header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.waitnig_divider {
+    width: 217px;
+    height: 4px;
+    background: #F9BF3B;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+.waiting_subheader {
+    margin-top: 17px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+}
+
+.waiting_wrapper {
+    margin-top: 45px;
+}
+
+.waiting_item {
+    display:inline-block;
+    vertical-align: top;
+    width: 339px;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.waiting_img {
+    width: 100%;
+}
+
+.waitnig_description {
+    margin-top: 33px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #4A4A4A;
+}
