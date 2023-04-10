@@ -89,7 +89,7 @@ h2.title {
     color: #F9BF3B;
     font-weight: 700;
 }
-.promo_btn {
+.promo_btn, .gift_item .gift_btn {
     display: block;
     margin: 53px auto;
     width: 313px;
@@ -108,9 +108,13 @@ h2.title {
     outline: none;
 }
 
+.gift_item .gift_btn {
+    margin: 0;
+    padding: 0;
+}
+
 .more {
     margin: 63px auto;
-
 }
 
 .more_text {
@@ -135,7 +139,7 @@ h2.title {
     padding: 85px 0 75px 0;
 }
 
-.waitnig_header {
+.waiting .waitnig_header, .finish .finish_header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -144,7 +148,10 @@ h2.title {
     text-align: center;
 }
 
-.waitnig_divider {
+.finish .finish_header {
+    color:#FFFFFF;
+}
+.waiting .waitnig_divider, .finish .finish_divider {
     width: 217px;
     height: 4px;
     background: #F9BF3B;
@@ -152,7 +159,7 @@ h2.title {
     margin-top: 18px;
 }
 
-.waiting_subheader {
+.waiting .waiting_subheader {
     margin-top: 17px;
     font-family: 'Roboto';
     font-style: normal;
@@ -225,3 +232,70 @@ h2.title {
     left: -240px;
     z-index: -1;
 }
+
+.finish {
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background: url('../img/second_bg.jpg') center center/cover no-repeat;
+}
+
+.finish .finish_wrapper {
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish .finish_wrapper .finish_item {
+    width: 232px;
+}
+
+.finish .finish_wrapper .finish_item .finish_round {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    width: 118px;
+    height: 118px;
+    background: #B4E2FF;
+    border-radius: 100%;
+}
+
+.finish .finish_wrapper .finish_item .finish_descr {
+    margin-top: 24.5px;
+    font-family: 'Roboto';
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    color: #EFEFEF;
+}
+
+.gift {
+    min-height: 631px;
+    padding: 85px 0 87px 0;
+    background: #EFEFEF;
+}
+
+.gift .gift_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gift_item .gift_icon {
+    width: 154px;
+    height: 174px;
+}
+
+.gift_item .gift_text {
+    padding: 45px 430px 51px 430px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    line-height: 43px;
+    color: #252525;
+}
+
