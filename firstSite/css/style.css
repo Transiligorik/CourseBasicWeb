@@ -16,7 +16,7 @@ padding: 0;
     padding: 39px 0px 62px 0px;
 }
 .container {
-    width: 1140px;
+    width: 1920px;
     margin: 0 auto;
     position: relative;
 }
@@ -183,7 +183,7 @@ h2.title {
     width: 100%;
 }
 
-.waitnig_description {
+.waiting_description {
     margin-top: 33px;
     font-family: 'Roboto';
     font-style: normal;
@@ -235,7 +235,7 @@ h2.title {
 
 .finish {
     min-height: 447px;
-    padding: 86px 0 79px 0;
+    padding: 86px 0 79px;
     background: url('../img/second_bg.jpg') center center/cover no-repeat;
 }
 
@@ -246,7 +246,7 @@ h2.title {
 }
 
 .finish .finish_wrapper .finish_item {
-    width: 232px;
+    width: 200px;
 }
 
 .finish .finish_wrapper .finish_item .finish_round {
@@ -267,7 +267,9 @@ h2.title {
     font-style: normal;
     font-weight: 300;
     font-size: 17px;
+    line-height: 20px;
     color: #EFEFEF;
+    font-weight: 300;
 }
 
 .gift {
@@ -276,7 +278,7 @@ h2.title {
     background: #EFEFEF;
 }
 
-.gift .gift_wrapper {
+.gift .gift_wrapper,  .registration .registration_wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -289,7 +291,7 @@ h2.title {
 }
 
 .gift_item .gift_text {
-    padding: 45px 430px 51px 430px;
+    padding: 45px 0 51px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -299,3 +301,7 @@ h2.title {
     color: #252525;
 }
 
+.registration {
+    min-height: 514px;
+    padding: 80px 0 52.5px; 
+}
