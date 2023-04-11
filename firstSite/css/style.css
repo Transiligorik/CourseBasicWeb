@@ -70,14 +70,19 @@ h2.title {
 
 .promo_text {
     Font-family: 'Roboto Light';
-    Font-style: Mixed;
     Font-size: 21px;
     Line-height: 28px;
     font-weight: 300;
     color: #FFFFFF;
-    text-align: center;
     padding: 0 25px;
     margin-top: 23px;
+}
+
+.promo_aligning {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .promo_text span {
@@ -89,6 +94,7 @@ h2.title {
     color: #F9BF3B;
     font-weight: 700;
 }
+
 .promo_btn, .gift_item .gift_btn {
     display: block;
     margin: 53px auto;
@@ -171,7 +177,8 @@ h2.title {
 .waiting_wrapper {
     margin-top: 45px;
     display: flex ;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 30px;
 }
 
 .waiting_item {
@@ -198,8 +205,10 @@ h2.title {
     padding: 102px 0 107px 0;
 }
 
+/*  start trought z-index
+
 .optimization_header {
-    margin-left: 391px;
+    margin-left: 550px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -209,7 +218,8 @@ h2.title {
 }
 
 .optimization_text {
-    margin-left: 391px;
+    
+    margin-left: 550px;
     margin-top: 25px;
     font-family: 'Roboto Light';
     font-style: normal;
@@ -218,19 +228,44 @@ h2.title {
     color: #4A4A4A;
 }
 
+/* .optimization_img {
+    position: absolute;
+    top: -1px;
+    left: -50px;
+    z-index: -1;
+} */
+
+
+/* start my vision code through inline-block*/
+
+.optimization {
+    position: relative;
+}
+
+.wrapper1 {
+    display: inline-block;
+    position: absolute;
+    width: 645px;
+    bottom:100px;
+    right: 450px;
+}
+
+.wrapper2{
+    display: inline-block; 
+    position: absolute;
+    width: 868px;
+    left: 150px;
+    bottom:-5px;
+}
+
+/* end*/
+
 .optimization_text span {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
     color: #4A4A4A;
-}
-
-.optimization_img {
-    position: absolute;
-    top: -54px;
-    left: -240px;
-    z-index: -1;
 }
 
 .finish {
@@ -242,11 +277,17 @@ h2.title {
 .finish .finish_wrapper {
     margin-top: 41px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.footer .footer_up {
+    display: flex;
+    column-gap: 10px;
 }
 
 .finish .finish_wrapper .finish_item {
-    width: 200px;
+    width: 190px;
 }
 
 .finish .finish_wrapper .finish_item .finish_round {
@@ -278,7 +319,7 @@ h2.title {
     background: #EFEFEF;
 }
 
-.gift .gift_wrapper,  .registration .registration_wrapper{
+.gift .gift_wrapper, .registration .registration_wrapper, .footer .footer_wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,6 +332,7 @@ h2.title {
 }
 
 .gift_item .gift_text {
+    width: 1000px;
     padding: 45px 0 51px;
     font-family: 'Roboto';
     font-style: normal;
@@ -304,4 +346,60 @@ h2.title {
 .registration {
     min-height: 514px;
     padding: 80px 0 52.5px; 
+}
+
+.registration .registration_icon {
+    width: 342px;
+    height: 201px;
+}
+
+.registration .registration_header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #252525;
+    padding: 36px 0 30px;
+}
+
+.registration .registration_date {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    color: #299CBD;
+    text-transform: uppercase;
+}
+
+.registration .registration_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    color: #4A4A4A;
+    padding-top: 24.5px;
+}
+
+.footer {
+    background: #1A1A1A;
+    padding: 59px 0 69px;
+}
+
+.footer .footer_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #888888;
+}
+
+.footer .footer_call {
+    padding-top: 10px;
+    text-decoration-line: none;
 }
