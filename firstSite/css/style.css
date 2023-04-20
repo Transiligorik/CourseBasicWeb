@@ -4,12 +4,6 @@ margin: 0;
 padding: 0;
 }
 
-@font-face {
-    font-family: "RobotoCondensed";
-    src: url('../fonts/RobotoCondensed-Regular.ttf') format("truetype");
-    font-weight: 400;
-  }
-
 .promo {
     height: 800px;
     background: url('../img/main_bg.jpg') center center no-repeat;
