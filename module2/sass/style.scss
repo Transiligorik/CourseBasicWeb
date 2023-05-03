@@ -11,8 +11,40 @@
 	width: 100%;
 	height: 50px;
 	background: #212121;
+	z-index: 1;
   }
   
+ @mixin button { 
+	display: block;
+	width: 115px;
+	height: 27px;
+	background: #000000;
+	margin: 18px auto;
+	border: none;
+
+	/* text button */
+
+	font-weight: 400;
+	font-size: 11px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	line-height: 11px;
+	&:hover {
+		background-image: none;
+		background-color: #1EACC7;
+	}
+ }
+
+ @mixin header {
+	font-weight: 700;
+	font-size: 38px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #222222;
+	margin-top: 32px;
+ }
+
   .menu {
 	display: flex;
 	justify-content: space-between;
@@ -20,15 +52,15 @@
 	margin: 0;
 	list-style: none;
   
-	.menu_link {
+	&_link {
 	  font-weight: 300;
 	  font-size: 15px;
 	  color: #FFFFFF;
 	  text-decoration: none;
 	}
   
-	.menu_item {
-	  border-right: 2px dotted wheat;
+	&_item {
+	  border-right: 2px dotted white;
 	  padding-right: 30px;
 	}
   
@@ -91,6 +123,10 @@
 	  text-transform: uppercase;
 	  color: #FFFFFF;
 	  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+	  &:hover {
+		background-image: none;
+		background-color: #1EACC7;
+	}
 	}
   }
   
@@ -99,7 +135,7 @@
 	background: url('../img/uber_bg.jpg') center (center / cover) no-repeat;
 	padding: 150px 0 135px 0;
   
-	.promo_header {
+	&_header {
 	  font-weight: 700;
 	  font-size: 60px;
 	  text-transform: uppercase;
@@ -110,17 +146,11 @@
 	}
   
 	.promo_subheader {
-	  font-weight: 700;
-	  font-size: 36px;
-	  line-height: 36px;
-	  text-transform: uppercase;
-	  color: #FFFFFF;
-	  margin: 0;
-	  margin-top: 22px;
-	  text-align: center;
+	  @include header;
+	  color: white;
 	}
   
-	.promo_descrip {
+	&_descrip {
 	  font-weight: 400;
 	  font-size: 18px;
 	  color: #FFFFFF;
@@ -128,7 +158,7 @@
 	  margin-top: 23px;
 	}
   
-	.promo_button {
+	&_button {
 	  display: block;
 	  margin: 118px auto;
 	  width: 259px;
@@ -145,34 +175,19 @@
 	  text-transform: uppercase;
 	  color: #FFFFFF;
 	  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+	  &:hover {
+		background-image: none;
+		background-color: #1EACC7;
+	}
 	}
   }
   
   .button {
-	display: block;
-	width: 115px;
-	height: 27px;
-	background: #000000;
-	margin: 18px auto;
-	border: none;
-
-	/* text button */
-
-	font-weight: 400;
-	font-size: 11px;
-	text-align: center;
-	text-transform: uppercase;
-	color: #FFFFFF;
-	line-height: 11px;
+	@include button;
   }
 
  .header {
-	font-weight: 700;
-	font-size: 38px;
-	text-align: center;
-	text-transform: uppercase;
-	color: #222222;
-	margin-top: 32px;
+	@include header;
   }
 
   .reasons {
@@ -287,3 +302,127 @@
 	}
 } 
 	
+// choice
+
+.choice {
+	position: relative;
+	&_bg_black {
+		display: flex;
+		justify-content: center;
+		background: black;
+		min-height: 500px;
+	}
+	&_bg_white {
+		background: white;
+		min-height: 400px;
+	}
+	&_wrapper {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 56px;
+	}
+	&_button {
+		@include button;
+		background: white;
+		color: black;
+	}
+	&_header {
+		@include header;
+		color: white;
+		padding-top: 27px;
+	}
+	&_subtitle {
+		font-weight: 400;
+		font-size: 17px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	&_img {
+		padding-top: 54px;
+	}
+	&_descrip {
+		text-align: center;
+		font-weight: 300;
+		font-size: 17px;
+		color: #222222;
+	}
+}
+
+// conditional
+
+.conditional {
+	background:white;
+	&_button {
+		@include button;
+	}
+	&_flexbox {
+		display: flex;
+		justify-content: center;
+		padding-top: 37px;
+	}
+	&_header {
+		@include header;
+		&_blue {
+			font-weight: 400;
+			font-size: 22px;
+			align-items: center;
+			color: #1CA8C3;
+		}
+		&_red {
+			font-weight: 400;
+			font-size: 22px;
+			align-items: center;
+			color: #FF5656;
+		}
+	}
+	&_block {
+		width: 500px;
+	}
+	&_list {
+		&_blue > li {
+			margin-left: 20px;
+			list-style: none;
+			position: relative;
+			font-size: 17px;
+			font-weight: 300;
+			line-height: 24px;
+			margin-bottom: 10px;
+			&::before {
+				content: '';
+				display: block; 
+				position: absolute;
+				left: -32px;
+				top: 3px;
+				width: 21px; 
+				height: 20px;
+				background: url('../icons/check_blue.svg') center (center / cover) no-repeat;
+			}
+		}
+		&_red > li {
+			margin-left: 20px;
+			list-style: none;
+			position: relative;
+			font-size: 17px;
+			font-weight: 300;
+			line-height: 24px;
+			margin-bottom: 10px;
+			&::before {
+				content: '';
+				display: block; 
+				position: absolute;
+				left: -32px;
+				top: 3px;
+				width: 21px; 
+				height: 20px;
+				background: url('../icons/check_red.svg') center (center / cover) no-repeat;
+			}
+		}
+	}
+	p {
+		font-weight: 300;
+		font-size: 17px;
+		color: #1CA8C3;
+	}
+}
