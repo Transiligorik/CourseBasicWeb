@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f9cf5d220.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="sass/bootstrap-grid.min.css">
     <link rel="stylesheet" href="sass/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="sass/style.css">
@@ -23,22 +24,27 @@
                     <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
                 </ul>
             </div>
+            <div class="hamburger hamburger_active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
 
             <div class="subheader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 offset-md-1">
-                        <a href="#" class="subheader_logo"><img src="icons/Uber.png" alt="logo"></a>
-                        <div class="subheader_official">Официальный партнер Uber в Москве</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-1">
+                            <a href="#" class="subheader_logo"><img class="subheader_image" src="icons/Uber.png" alt="logo"></a>
+                            <div class="subheader_official">Официальный партнер Uber в Москве</div>
+                        </div>
+                        <div class="col-md-3 offset-md-1 col-xl-2 offset-xl-2">
+                            <div class="subheader_call">Звоните нам ежедневно</div>
+                                <a href="tel:8495970988" class="subheader_phone">8 495 797 09 88</a>
+                        </div>
+                        <div class="col-md-3"><button class="subheader_button">заказать звонок</button></div>
                     </div>
-                    <div class="col-md-2 offset-md-2">
-                        <div class="subheader_call">Звоните нам ежедневно</div>
-                            <a href="tel:8495970988" class="subheader_phone">8 495 797 09 88</a>
-                    </div>
-                    <div class="col-md-2"><button class="subheader_button">заказать звонок</button></div>
                 </div>
-            </div>
             </div>
     </header>
 
@@ -46,13 +52,13 @@
         <section class="promo">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 offset-md-1">
+                    <div class="col-md-12 offset-md-0  col-lg-10 offset-lg-1">
                         <h1 class="promo_header">КОМПАНИЯ UBER PARTNERS!</h1>
                         <h2 class="promo_subheader">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
                         <div class="promo_descrip">
                             Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы запиковое время.
                             <br>
-                            Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве.  Водители у насзарабатывают от 80000- 120000 в месяц.
+                            Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве.  Водители у нас зарабатывают от 80000- 120000 в месяц.
                         </div>
                         <button class="promo_button">ОТПРАВИТЬ ЗАЯВКУ!</button>
                     </div>
@@ -67,14 +73,14 @@
                 <div class="row">
 
                     <div class="row col-md-12 align-items-center">    
-                        <div class="col-md-2 reasons_circle"><img src="icons/auto.png" alt="money"></div>
-                        <div class="col-md-4 reasons_descrip">
+                        <div class="col-sm-12 col-md-4 col-lg-2 reasons_circle"><img src="icons/auto.png" alt="money"></div>
+                        <div class="col-sm-12 col-md-8 col-lg-4 reasons_descrip">
                             <span>Никаких наличных, оплата происходит автоматически</span>
                             <br>
                             Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не нужно искать мелкие деньги для размена.
                         </div>
-                        <div class="col-md-2 reasons_circle"><img src="icons/diagram.png" alt="diagram"></div>
-                        <div class="col-md-4 reasons_descrip reasons_padding reasons_margin">
+                        <div class="col-sm-12 col-md-4 col-lg-2 reasons_circle"><img src="icons/diagram.png" alt="diagram"></div>
+                        <div class="col-sm-12 col-md-8 col-lg-4 reasons_descrip reasons_padding reasons_margin">
                             <span>Комиссия 8% + БОНУСЫ</span>
                             <br>
                             У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!
@@ -82,13 +88,13 @@
                     </div>
 
                     <div class="row col-md-12 align-items-center">    
-                        <div class="col-md-2 reasons_circle"><img src="icons/money.png" alt="money"></div>
-                        <div class="col-md-4 reasons_descrip">
+                        <div class="col-sm-12 col-md-4 col-lg-2 reasons_circle"><img src="icons/money.png" alt="money"></div>
+                        <div class="col-sm-12 col-md-8 col-lg-4 reasons_descrip">
                             <span>Высокий доход с гарантированными выплатами</span>
                             <br>
                             Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.                                </div>
-                        <div class="col-md-2 reasons_circle"><img src="icons/shedule.png" alt="shedule"></div>
-                        <div class="col-md-4 reasons_descrip reasons_padding reasons_margin">
+                        <div class="col-sm-12 col-md-4 col-lg-2 reasons_circle"><img src="icons/shedule.png" alt="shedule"></div>
+                        <div class="col-sm-12 col-md-8 col-lg-4 reasons_descrip reasons_padding reasons_margin">
                             <span>Работа в удобное время, никаких графиков</span>
                             <br>
                             Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подраба-
@@ -96,13 +102,13 @@
                         </div>
 
                         <div class="row col-md-12 align-items-center">    
-                            <div class="col-md-2 reasons_circle"><img src="icons/key.png" alt="key"></div>
-                            <div class="col-md-4 reasons_descrip">
+                            <div class="col-sm-12 col-md-4 col-lg-2 reasons_circle"><img src="icons/key.png" alt="key"></div>
+                            <div class="col-sm-12 col-md-8 col-lg-4 reasons_descrip">
                                 <span>Высокий доход с гарантированными выплатами</span>
                                 <br>
                                 Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.                                </div>
-                            <div class="col-md-2 reasons_circle"><img src="icons/map.png" alt="map"></div>
-                            <div class="col-md-4 reasons_descrip reasons_padding reasons_margin">
+                            <div class="col-sm-12 col-md-4 col-lg-2 reasons_circle"><img src="icons/map.png" alt="map"></div>
+                            <div class="col-sm-12 col-md-8 col-lg-4 reasons_descrip reasons_padding reasons_margin">
                                 <span>Работа в удобное время, никаких графиков</span>
                                 <br>
                                 Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подраба-
@@ -110,13 +116,13 @@
                         </div>
 
                         <div class="row col-md-12 align-items-center">    
-                            <div class="col-md-2 reasons_circle"><img src="icons/phone.png" class="reasons_imageSize" alt="phone"></div>
-                            <div class="col-md-4 reasons_descrip">
+                            <div class="col-sm-12 col-md-4 col-lg-2 reasons_circle"><img src="icons/phone.png" class="reasons_imageSize" alt="phone"></div>
+                            <div class="col-sm-12 col-md-8 col-lg-4 reasons_descrip">
                                 <span>Высокий доход с гарантированными выплатами</span>
                                 <br>
                                 Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.                                </div>
-                            <div class="col-md-2 reasons_circle"><img src="icons/sticker.png" alt="sticker"></div>
-                            <div class="col-md-4 reasons_descrip reasons_padding reasons_margin">
+                            <div class="col-sm-12 col-md-4 col-lg-2 reasons_circle"><img src="icons/sticker.png" alt="sticker"></div>
+                            <div class="col-sm-12 col-md-8 col-lg-4 reasons_descrip reasons_padding reasons_margin">
                                 <span>Работа в удобное время, никаких графиков</span>
                                 <br>
                                 Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подраба-
@@ -139,7 +145,7 @@
                             <div class="mobile_item_subtitle">
                                 оформление заказа одним касанием
                             </div>
-                            <div class="mobile_item_plus"><img src="icons/plus.png" alt="plus"></div>
+                            <div class="mobile_item_plus"></div>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -147,7 +153,7 @@
                             <div class="mobile_item_subtitle">
                                 надежная подача
                             </div> 
-                            <div class="mobile_item_plus"><img src="icons/plus.png" alt="plus"></div>
+                            <div class="mobile_item_plus"></div>
                         </div> 
                     </div>
                     <div class="col-md-4">
@@ -155,7 +161,7 @@
                             <div class="mobile_item_subtitle">
                                 прозрачные цены
                             </div>
-                            <div class="mobile_item_plus"><img src="icons/plus.png" alt="plus"></div>
+                            <div class="mobile_item_plus"></div>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -163,7 +169,7 @@
                             <div class="mobile_item_subtitle">
                                 безналичная оплата
                             </div>
-                            <div class="mobile_item_plus"><img src="icons/plus.png" alt="plus"></div>
+                            <div class="mobile_item_plus"></div>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -171,7 +177,7 @@
                             <div class="mobile_item_subtitle">
                                 обратная связь
                             </div>
-                            <div class="mobile_item_plus"><img src="icons/plus.png" alt="plus"></div>
+                            <div class="mobile_item_plus"></div>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -179,7 +185,7 @@
                             <div class="mobile_item_subtitle">
                                 разделить стоимость поездки
                             </div>
-                            <div class="mobile_item_plus"><img src="icons/plus.png" alt="plus"></div>
+                            <div class="mobile_item_plus"></div>
                         </div>
                     </div>
                 </div>
@@ -260,6 +266,51 @@
                 </div>
             </div>
         </section>
+
+        <section class="world">
+            <div class="container">
+                <div class="world_flex">
+                    <div><button class="world_button">города</button></div>
+                    <h2 class="world_header">По всему миру</h2>
+                    <div class="world_subheader">Мы в вашем городе и по всему миру</div>
+                    <div class="world_view"><a>посмотреть все города</a></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="footer_col">
+                <div class="footer_divider"></div>
+                <div class="footer_row">
+                    <div class="footer_social">
+                        <a href="#" class="footer_social_items"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="footer_social_items"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="footer_social_items"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="footer_social_items"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="footer_wrapper">
+                        <div class="footer_links">
+                            <a href="#">на главную</a>
+                            <a href="#">города</a>
+                            <a href="#">для водителей</a>
+                        </div>
+                        <div class="footer_links_sub">
+                            <a href="#">центр поддержки</a>
+                            <a href="#">вакансии</a>
+                            <a href="#">разработчики</a>
+                            <a href="#">блог</a>
+                            <a href="#">о нас</a>
+                        </div>
+                    </div>
+                    <div class="footer_mobile">
+                        <a href="#" class="footer_mobile_icons"><img src='icons/app_store.png' alt='appStore'></a>
+                        <a href="#" class="footer_mobile_icons"><img src='icons/google_play.png' alt='googlePay'></a>
+                        <a href="#" class="footer_mobile_icons"><img src='icons/windows_store.png' alt='windowsStore'></a>
+                    </div>
+                </div>
+                <div class="footer_links_lang"><a>русский</a></div>
+            </div>
+        </div>
     </main>
 </body>
 </html>

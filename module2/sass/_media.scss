@@ -1,0 +1,216 @@
+@media (max-width: 1200px) {
+    .menu {
+        &_item {
+            padding-right: 20px;
+        }
+        &_link {
+            font-size: 13px;
+        }
+    }
+    .promo {
+        &_header {
+            font-size: 50px;
+        }
+    }
+    .header {
+        padding-bottom: 15px;
+    }
+    .reasons_margin {
+        margin-top: -18px;
+    }
+    .mobile {
+        &_item {
+        width: 300px;
+            &_subtitle {
+                font-size: 20px;
+            }
+        }
+    }
+    .footer {
+        &_row {
+            width: 98%;
+        }
+        &_wrapper {
+            width: 30%;
+        }
+        &_social {
+            margin: 0 5px;
+            &_icons {
+                margin: 0 10px;
+                width: 60px;
+                height: 15px;
+            }
+            
+        }
+        &_links {
+            font-size: 11px;
+            &_sub {
+                font-size: 9px;
+            }
+        }
+        &_mobile {
+            &_icons {
+                margin-right: 0 10px;
+                width: 70px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .menu {
+        padding: 13px 10px;
+        &_item {
+            padding-right: 10px;
+        }
+        &_link {
+            font-weight: 400;
+            font-size: 12px;
+        }
+    }
+    .promo {
+        padding-bottom: 0px;
+        &_header {
+            font-size: 30px;
+        }
+        .promo_subheader {
+            font-size: 25px;
+        }
+        &_descrip {
+            font-size: 15px;
+        }
+    }
+    .subheader {
+        &_logo {
+           img {
+             width: 100%;
+           }
+        }
+        &_official {
+            font-size: 11px;
+        }
+        &_phone {
+            font-size: 17px;
+        }
+        &_button {
+            width: 122px;
+            height: 26px;
+            font-size: 7px;
+            margin: 27px;
+        }
+    }
+    .mobile {
+        &_item {
+        width: 230px;
+        height: 200px;
+            &_subtitle {
+                font-size: 15px;
+            }
+        }
+    }
+    .align-items-center {
+        display: flex;
+        flex-direction: column;
+    }
+    .reasons {
+        .header {
+            font-size: 30px;
+        }
+        &_descrip {
+            text-align: center;
+            padding: 0;
+            > span {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        &_padding {
+            padding: 0px;
+            margin-bottom: 10px;
+        }
+        &_circle {
+            margin: 25px 0;
+        }
+    } 
+    .footer {
+        &_row {
+            width: 95%;
+        }
+        &_wrapper {
+            margin: 0 40px;
+        }
+        &_social {
+            width: 29%;
+            padding-left: 4%;
+            &_items {
+                width: 26px;
+                height: 26px;
+            }
+        }
+        &_mobile {
+            &_icons {
+                margin: 0 1%;
+                width: 70px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0,0,0, .8);
+        transition: 0.6s all;
+        &_active {
+            left: 0;
+        }
+        &_item {
+            padding-right: 0;
+            border: none;
+            margin: 10px;
+            &_link {
+                font-size: 20px;
+            }
+        }
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translate(-50%);
+        width: 26px;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background: white;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}

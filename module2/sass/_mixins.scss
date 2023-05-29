@@ -1,0 +1,39 @@
+ @mixin button { 
+	display: block;
+	width: 115px;
+	height: 27px;
+	background: #000000;
+	margin: 18px auto;
+	border: none;
+
+	/* text button */
+
+	font-weight: 400;
+	font-size: 11px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	line-height: 11px;
+	&:hover {
+		background-image: none;
+		background-color: #1EACC7;
+	}
+ }
+
+ @mixin header {
+	font-weight: 700;
+	font-size: 38px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #222222;
+	margin-top: 32px;
+ }
+
+ @mixin flex_row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	> a {
+		padding: 0 5px;
+	}
+ }
