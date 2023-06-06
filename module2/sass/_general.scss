@@ -10,9 +10,9 @@
 	z-index: 1;
   }
 
-.hamburger {
-display: none;
-}
+	.hamburger {
+		display: none;
+	}
 
 a {
 	text-decoration: none;
@@ -187,7 +187,7 @@ a {
 	  padding-right: 50px;
 	}
   
-	&F_descrip {
+	&_descrip {
 	  padding-bottom: 25px;
   
 	  > {
@@ -542,4 +542,8 @@ a {
 			color: #1FBAD6;
 		}
 	}
+}
+
+.xs-visible {
+	display: none;
 }
