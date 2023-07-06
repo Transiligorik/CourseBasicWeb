@@ -1,0 +1,21 @@
+* {
+    font-family: 'MuseoSansCyrl-500';
+}
+body {
+    width: 100%;
+}
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+@import "../base/_variables.scss";
+@import "_promo.scss";
+@import "_header.scss";
+@import "_buttons.scss";
+@import "_advantages.scss";
+// @import "_media.scss";
+@import "_consultation.scss";
+@import "_titles.scss";
+@import "_forms.scss";
+@import "_carousel.scss";
